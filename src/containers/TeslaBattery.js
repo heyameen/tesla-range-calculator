@@ -32,7 +32,7 @@ class TeslaBattery extends React.Component {
     }
   }
 
-  calculateStats = (models, value) => {
+  calculateStats (models, value) {
     const dataModels = getModelData();
     return models.map(model => {
       const { speed, temperature, climate, wheels } = value;
