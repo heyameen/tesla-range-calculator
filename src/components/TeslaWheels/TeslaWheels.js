@@ -1,13 +1,14 @@
 import "./TeslaWheels.css";
 
-import PropTypes from "prop-types";
 import React from "react";
+
+// import PropTypes from "prop-types";
 
 const LabelLists = (props) => {
   const value = props.wheels.value;
   const changeHandler = props.wheels.handleChangeWheels;
   const sizes = [19, 21];
-  
+
   const LabelItems = sizes.map((size) => (
     <label
       key={size}
@@ -24,7 +25,7 @@ const LabelLists = (props) => {
           changeHandler(size);
         }}
       />
-      <p>{size}"</p>
+      <p>{size}</p>
     </label>
   ));
   return <div>{LabelItems}</div>;
@@ -39,8 +40,9 @@ const TeslaWheels = (props) => (
   </div>
 );
 
-TeslaWheels.propTypes = {
-  value: PropTypes.number,
-  handleChangeWheels: PropTypes.func,
-};
+// TeslaWheels.propTypes = {
+//   value: PropTypes.number,
+//   handleChangeWheels: PropTypes.func,
+//   wheel: propTypes.any,
+// };
 export default TeslaWheels;

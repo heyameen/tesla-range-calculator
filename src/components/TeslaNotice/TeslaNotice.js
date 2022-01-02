@@ -1,6 +1,6 @@
 import "./TeslaNotice.css";
 
-import React from "react";
+import React from 'react';
 
 const TeslaNotice = () => {
   return (

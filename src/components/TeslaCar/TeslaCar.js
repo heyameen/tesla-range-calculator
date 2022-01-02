@@ -1,6 +1,7 @@
 import "./TeslaCar.css";
 
 import PropTypes from "prop-types";
+import React from 'react';
 
 const TeslaCar = (props) => {
   return (
